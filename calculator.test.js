@@ -98,7 +98,6 @@ describe('modulus', () => {
 
 describe('even', () => {
   
-  describe('even', () => {
     test('can check if a small number is even', () => {
       expect(even(2)).toBe(true);
     });
@@ -106,9 +105,15 @@ describe('even', () => {
     test('can check if a large number is even', () => {
       expect(even(25654659)).toBe(false);
     });
-  });
 });
 
 describe('odd', () => {
+  
+  test('can check if a small number is odd', () => {
+    expect(odd(3)).toBe(true);
+  });
 
+  test('can check if a large number is odd', () => {
+    expect(odd(25654650)).toBe(false);
+  });
 });
