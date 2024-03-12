@@ -59,7 +59,7 @@ describe('multiply', () => {
     expect(actual).toBe(expected);
   });
 
-  test('can multiply negative numbers', () => {
+  test('can multiply two negative numbers', () => {
     expected = 64;
     actual = multiply(-4, -16);
     expect(actual).toBe(expected);
@@ -67,7 +67,18 @@ describe('multiply', () => {
 });
 
 describe('divide', () => {
+  
+  test('can divide two numbers', () => {
+    expected = 7;
+    actual = divide(49, 7);
+    expect(actual).toBe(expected);
+  });
 
+  test('can divide two negative numbers', () => {
+    expected = 4;
+    actual = divide(-16, -4);
+    expect(actual).toBe(expected);
+  });
 });
 
 describe('modulus', () => {
