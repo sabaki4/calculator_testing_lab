@@ -40,19 +40,30 @@ describe('subtract', () => {
 
   test('can subtract two small numbers', () => {
     expected = 3;
-    actual = sum(1, 2);
+    actual = subtract(5, 2);
     expect(actual).toBe(expected);
   });
 
   test('can subtract two large numbers', () => {
     expected = 5000000;
-    actual = sum(1000000, 4000000);
+    actual = subtract(6000000, 1000000);
     expect(actual).toBe(expected);
   });
 });
 
 describe('multiply', () => {
 
+  test('can multiply zero', () => {
+    expected = 0;
+    actual = multiply(0, 15);
+    expect(actual).toBe(expected);
+  });
+
+  test('can multiply negative numbers', () => {
+    expected = 64;
+    actual = multiply(-4, -16);
+    expect(actual).toBe(expected);
+  });
 });
 
 describe('divide', () => {
