@@ -83,6 +83,17 @@ describe('divide', () => {
 
 describe('modulus', () => {
 
+  test('can find the modulus of two small numbers', () => {
+    expected = 1;
+    actual = modulus(5, 2);
+    expect(actual).toBe(expected);
+  });
+
+  test('can find the modulus of two large numbers', () => {
+    expected = 20000;
+    actual = modulus(290000, 90000);
+    expect(actual).toBe(expected);
+  });
 });
 
 describe('even', () => {
