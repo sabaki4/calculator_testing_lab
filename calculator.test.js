@@ -43,6 +43,12 @@ describe('subtract', () => {
     actual = sum(1, 2);
     expect(actual).toBe(expected);
   });
+
+  test('can subtract two large numbers', () => {
+    expected = 5000000;
+    actual = sum(1000000, 4000000);
+    expect(actual).toBe(expected);
+  });
 });
 
 describe('multiply', () => {
